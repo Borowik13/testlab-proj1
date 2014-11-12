@@ -6,7 +6,8 @@ public class Member {
     private int id;
     private String member_name;
     private String content;
-
+    private Set directories;
+    
     public Member() {
     }
 
@@ -37,5 +38,13 @@ public class Member {
 
     public void setContent(String content) {
         this.content = content;
+    }
+    
+    public Set getDirectories() {
+        return directories;
+    }
+    
+    public void setDirectories(Set directories) {
+        this.directories = directories;
     }
 }

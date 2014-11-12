@@ -31,14 +31,16 @@ public class Directory {
       this.dir_name = dir_name;
    }
    
+   @Override
    public boolean equals(Object obj) {
       return obj != null
-              && this instanceof Directory
+              && obj instanceof Directory
               && this.id == ((Directory)obj).id
-              && this.dir_name == ((Directory)obj).dir_name
+              && this.dir_name.equals(((Directory)obj).dir_name)
               && this.rights == ((Directory)obj).rights;
    }
    
+   @Override
    public int hashCode() {
       int tmp = 0;
       tmp = (id + dir_name + rights).hashCode();

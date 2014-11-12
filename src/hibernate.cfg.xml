@@ -8,6 +8,5 @@
     <property name="hibernate.connection.username">app</property>
     <property name="hibernate.connection.password">app</property>
     <mapping resource="hibernate.hbm.xml"/>
-    <mapping resource="custom_database.hbm1.xml"/>
   </session-factory>
 </hibernate-configuration>
